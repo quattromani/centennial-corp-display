@@ -63,8 +63,6 @@ layout: default
     <article class="pull" role="article">
       <address>{{ page.address }}, {{ page.city }}, {{ page.state }}, {{ page.zip }} | {{ page.phone }}</address>
       <p class="mall-description banner-content">{{ page.description }}</p>
-      <br><br>
-      <a class="cta" href="{{ page.mall-url }}" target="_blank">Visit Website</a>
     </article>
   </section>
 
@@ -101,44 +99,6 @@ layout: default
 
   <div class="factsheet-map-contacts">
     <section role="region">
-      <div class="factsheet">
-        <ul>
-          <li>
-            <a href="{{ site.baseurl }}/pdfs/Fact-Sheet-{{ page.nick }}.pdf" target="_blank">
-
-              <div class="icon-block sheet">
-                <img class="svg" src="{{ site.baseurl }}/images/icons/factsheet.svg" alt="factsheet icon - link opens PDF in new window">
-                <span class="text">
-                  <h4>Fact Sheet</h4>
-                  <span class="read-more">View</span>
-                </span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/pdfs/Lease-Site-Plans-{{ page.nick }}.pdf" target="_blank">
-              <div class="icon-block lease-plans">
-                <img class="svg" src="{{ site.baseurl }}/images/icons/lease-plans.svg" alt="lease plans icon - link opens PDF in new window">
-                <span class="text">
-                  <h4>Lease Plans</h4>
-                  <span class="read-more">View</span>
-                </span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/pdfs/Leasing-Brochure-{{ page.nick }}.pdf" target="_blank">
-              <div class="icon-block leasing-brochure">
-                <img class="svg" src="{{ site.baseurl }}/images/icons/leasing-brochure.svg" alt="leasing brochure icon - link opens PDF in new window">
-                <span class="text">
-                  <h4>Leasing Brochure</h4>
-                  <span class="read-more">View</span>
-                </span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
 
       {% if page.lat %}
       <div class="map">
@@ -183,8 +143,6 @@ layout: default
               {{ page.permanent-leasing.title }}<br>
               {% endif %}
               <a href="tel:{{ page.permanent-leasing.phone }}">(o) {{ page.permanent-leasing.phone }}</a>
-              <br>
-              <a href="mailto:{{ page.permanent-leasing.email }}">{{ page.permanent-leasing.email }}</a>
             </span>
 
             {% if page.permanent-leasing.name-2 != null %}
@@ -202,8 +160,6 @@ layout: default
               {{ page.permanent-leasing.title-2 }}<br>
               {% endif %}
               <a href="tel:{{ page.permanent-leasing.phone-2 }}">(o) {{ page.permanent-leasing.phone-2 }}</a>
-              <br>
-              <a href="mailto:{{ page.permanent-leasing.email-2 }}">{{ page.permanent-leasing.email-2 }}</a>
             </span>
             {% endif %}
           </li>
@@ -222,8 +178,6 @@ layout: default
               {{ page.specialty-leasing.title }}<br>
               {% endif %}
               <a href="tel:{{ page.specialty-leasing.phone }}">(o) {{ page.specialty-leasing.phone }}</a>
-              <br>
-              <a href="mailto:{{ page.specialty-leasing.email }}">{{ page.specialty-leasing.email }}</a>
             </span>
           </li>
         </ul>
