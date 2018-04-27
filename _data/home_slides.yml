@@ -1,0 +1,15 @@
+#   slide: path to image
+#   caption-h2: sans-serif text
+#   caption-h2-span: serif text word
+
+- slide: HM_HeroCarousel-mobile_Img-1.jpg
+  caption-h2: Bringing Yum to
+  caption-h2-span: Life
+
+- slide: HM_HeroCarousel-mobile_Img-2.jpg
+  caption-h2: Bringing Yum to
+  caption-h2-span: Life
+
+- slide: HM_HeroCarousel-mobile_Img-3.jpg
+  caption-h2: Bringing Yum to
+  caption-h2-span: Life

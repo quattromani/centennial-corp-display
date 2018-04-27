@@ -1,0 +1,29 @@
+// Neat Pad
+$pad: $base-spacing;
+
+// Grid settings
+$grid-columns: 16;
+$max-width: 1240px;
+$extra-wide-width: 1680px;
+
+// Setup Breakpoints
+$desktop-px: 1200px;
+$desktop-columns: 16;
+
+$tablet-px: 1199px;
+$tablet-columns: 8;
+
+$mobile-px: 480px;
+$mobile-columns: 4;
+
+$iphone5-px: 375px;
+
+// Breakpoints
+$desktop: new-breakpoint(min-width $desktop-px $desktop-columns);
+
+$tablet: new-breakpoint(max-width $tablet-px $tablet-columns);
+$tablet-only: new-breakpoint(min-width $mobile-px max-width $tablet-px);
+
+$mobile: new-breakpoint(max-width $mobile-px $mobile-columns);
+
+$iphone5: new-breakpoint(max-width $iphone5-px $mobile-columns);

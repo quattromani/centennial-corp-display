@@ -1,0 +1,61 @@
+// Colors
+$color-white: #fff;
+$color-off-white: whitesmoke;
+$color-black: #000;
+$color-grey: #58595b;
+$color-light-light-grey: #f0f0f0;
+$color-light-grey: #e1e1e1;
+$color-dark-grey: #262626;
+$color-shadow-grey: #b4b4b4;
+
+// Brand Palette
+$color-brand-primary: #0072c4; // Blue
+$color-brand-primary-complimentary: #0057b1; // Dark-Blue
+$color-brand-primary-secondary: #00adea; // Light-Blue
+$color-brand-primary-alternate: #016ab9; // BG Pattern Blue-Light
+$color-brand-primary-tertiary: #034488; //BG Pattern Blue-Dark
+$color-brand-primary-quaternary: #a8f0f5; // Social Cards Blue-Extra Light
+
+$color-brand-secondary: $color-grey; // Always Base Text color
+$color-brand-secondary-complimentary: $color-brand-secondary;
+
+$color-brand-tertiary: $color-white; // Always Background
+$color-brand-tertiary-complimentary: $color-brand-tertiary;
+
+$color-brand-quaternary: #00b9b2; // Aqua-Mid
+$color-brand-quaternary-complimentary:  #00a69e; // Aqua-Dark
+$color-brand-quaternary-alternate: #00c3b9; // BG Pattern Aqua-Light
+$color-brand-quaternary-tertiary:  #00bbb1; // BG Pattern Aqua-Mid
+$color-brand-quaternary-quaternary: #a8f0f5; // Aqua-Extra Light
+
+$color-brand-quinary: #f84f05; // Orange
+$color-brand-quinary-complimentary: #f11800; // Orange-Dark
+$color-brand-quinary-alternate: #ff5911; // BG Pattern Orange-Light
+$color-brand-quinary-tertiary: #f94d0e; // BG Pattern Orange-Mid
+
+$color-brand-senary: #8dc63f; // Green
+$color-brand-senary-complimentary: #31b600; // Green-Dark
+$color-brand-senary-alternate: #a3ef3f; // BG Pattern Green-Light
+$color-brand-senary-tertiary: #7aba34; // BG Pattern Green-Mid 
+
+$color-brand-septenary: $color-grey; // Footer BG Pattern Grey
+$color-brand-septenary-complimentary: #525355; // Footer BG Pattern Dark Grey
+
+
+
+
+$color-primary-red: red;
+$color-primary-green: green;
+$color-primary-blue: blue;
+
+// Default Text Colors
+$base-font-color: $color-brand-secondary;
+$base-accent-color: $color-brand-tertiary;
+
+// Supplementary Colors
+$alert-bg: #c72626;
+$alert-color: $alert-bg;
+$success-bg: mix($color-primary-green, white, 40%);
+$success-color: $color-primary-green;
+$info-bg: mix($color-primary-blue, white, 40%);
+$info-color: $color-primary-blue;

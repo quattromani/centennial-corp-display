@@ -1,0 +1,109 @@
+---
+title: Specialty Leasing
+subtitle: Specialty Leasing Partnerships
+permalink: "/retail-places/specialty-leasing/"
+class: specialty-leasing
+parent: Retail Places
+description:
+categories:
+specialty-leasing:
+  name: Deborah Georgetti-Piro
+  title: SVP Business Development
+  category: team
+  link:
+  email: dgeorgettipiro@CentennialREC.com
+  phone: 972.210.3530
+---
+
+<section class="banner" role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.subtitle }}</h1>
+  </header>
+
+  <div class="popup" role="region">
+    <div class="container">
+      <article class="slide-in slide-in-left" role="article">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/popup.jpg" alt="{{ page.title }} popup image">
+      </article>
+
+      <aside class="slide-in slide-in-right" role="complementary">
+        <h3>Pop Up</h3>
+        <p>Test a new market and create sensational buzz for your product with a temporary pop-up store. Our professionals will help you get the right space open and Instagram ready in a fraction of the time it takes to lease a permanent space, ensuring you don’t miss a trend cycle, or a product launch date.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="kiosk" role="region">
+    <div class="container">
+      <aside class="push slide-in slide-in-right" role="complementary">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/kiosk.jpg" alt="{{ page.title }} kiosk image">
+      </aside>
+
+      <article class="pull slide-in slide-in-left" role="article">
+        <h3>Kiosk</h3>
+        <p>Common area visibility from all angles brings consumers to your doorstep. Plus, we’ll help find the right neighbors to create a shopping environment that best suits your brand, and targets your customers.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="cart" role="region">
+    <div class="container">
+      <article class="slide-in slide-in-left" role="article">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/cart.jpg" alt="{{ page.title }} cart image">
+      </article>
+
+      <aside class="slide-in slide-in-right" role="complementary">
+        <h3>Cart/RMU</h3>
+        <p>Need to be open quickly and efficiently? We have ready to go retail merchandising units to host your brand. Grow your business while gaining exposure to thousands of shoppers. You can sell merchandise, gift certificates, or simply advertise, whatever suits your business needs.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="outdoor" role="region">
+    <div class="container">
+      <aside class="push slide-in slide-in-right" role="complementary">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/outdoor.jpg" alt="{{ page.title }} outdoor image">
+      </aside>
+
+      <article class="pull slide-in slide-in-left" role="article">
+        <h3>Outdoor</h3>
+        <p>Step outside of the four walls and realize the potential of your concept at the hub of a vibrant community. Our properties have the outdoor space to accommodate a variety of large format seasonal uses from ice skating to national tours, along with the team to help make it a success.</p>
+      </article>
+    </div>
+  </div>
+
+  <section role="region">
+    <div class="contacts">
+      <h3>Connect with Centennial Leasing</h3>
+      <hr>
+
+      <ul>
+        <li>
+          <!-- <h5>Specialty Leasing</h5> -->
+          {% if page.specialty-leasing.category == "executive" %}
+          <a href="{{ page.specialty-leasing.link }}">
+            <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-teal.svg" alt="card icon - links to bio page"></i>
+            <strong>{{ page.specialty-leasing.name }}</strong><br>
+          </a>
+          {% else %}
+          <strong>{{ page.specialty-leasing.name }}</strong><br>
+          {% endif %}
+          <span>
+            {{ page.specialty-leasing.title }}<br>
+            <a href="tel:{{ page.specialty-leasing.phone }}">(o) {{ page.specialty-leasing.phone }}</a>
+            <br>
+            <a href="mailto:{{ page.specialty-leasing.email | encode_email }}">{{ page.specialty-leasing.email }}</a>
+          </span>
+        </li>
+      </ul>
+
+      <a class="cta" href="{{ site.baseurl }}/retail-places/centennial-collection">View Portfolio</a>
+    </div>
+  </section>
+
+</div>

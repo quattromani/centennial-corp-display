@@ -1,0 +1,62 @@
+---
+layout: legal
+title: Oops! That page can’t be found.
+subtitle: Page Not Found
+permalink: /404.html
+class: sitemap
+sitemap: exclude
+search: exclude
+---
+
+<section class="banner" role="region">
+  <div class="banner">
+    <figure>
+      <img src="{{ site.baseurl }}/images/{{ page.class }}/banner.jpg" alt="{{ page.title }} page banner">
+
+      <figcaption>
+        <h1>{{ page.title }}</h1>
+        <p>Ornare Parturient Sit Ipsum Ullamcorper</p>
+      </figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<header>
+  <h1>{{ page.subtitle }}</h1>
+</header>
+
+<div class="container">
+
+  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <p>It looks like this was the result of either:</p>
+
+  <ul class="bulleted">
+    <li>a mistyped address</li>
+    <li>an out-of-date link</li>
+  </ul>
+
+  <p>Try going back to the <a href="/">homepage</a>.</p>
+
+  <hr>
+
+  <ul>
+    {% assign pages = site.pages | map:'title' | uniq %}
+    {% for page in pages %}
+    {% unless page.sitemap == "exclude" %}
+    <li>
+      <a href="{{ page.url | prepend: site.baseurl }}">{{ page }}</a>
+    </li>
+    {% endunless %}
+    {% endfor %}
+  </ul>
+
+  <hr>
+
+  <script>
+    var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
+  </script>
+
+  <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+
+</div>

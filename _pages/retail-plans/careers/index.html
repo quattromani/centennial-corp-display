@@ -1,0 +1,62 @@
+---
+layout: careers
+title: Careers
+subtitle: Career Opportunities
+permalink: "/retail-plans/careers/"
+class: careers
+parent: Retail Plans
+description:
+categories:
+---
+
+<section role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+  <section id="careers" role="region">
+
+    <div class="third">
+      <h4>Work/Life Balance</h4>
+      <p>Work should be gratifying but we all need time away to recharge, travel, take care of personal matters, or spend time with family and friends. Centennial offers a generous PTO (paid time off) policy, volunteer programs and corporate flex hours—there’s no one-size solution for helping you achieve your best.</p>
+    </div>
+    <div class="third">
+      <h4>Comprehensive Benefits</h4>
+      <p>In addition to competitive salaries, we offer an array of comprehensive benefits including healthcare, dental and vision insurance, flex spending accounts, and 401K matching.  With quality benefits from premium providers, we’re committed to making life better for employees and their families.</p>
+    </div>
+    <div class="third">
+      <h4>Office Culture</h4>
+      <p>Our modern, open concept corporate office sets the tone for accessible and collaborative work relationships. Casual Fridays, team spirit events, and holiday parties are just a few examples of how we create an environment that promotes fun in the workplace, and triggers a passion for what we do.</p>
+    </div>
+
+    <hr>
+
+    <header>
+      <h1>{{ page.subtitle }}</h1>
+    </header>
+
+    <form>
+      <div class="select" role="search">
+        <select class="selectric filters-select">
+          <option value="*" selected>{{ 'Filter by State' | upcase }}</option>
+          <option value="*">{{ 'View All' | upcase }}</option>
+          {% assign careers = site.data.careers | sort:'state' | map:'state' | uniq %}
+          {% for career in careers %}
+          <option value=".{{ career }}" data-state="{{ career }}">{{ career }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </form>
+
+    <ul class="job-list">
+      {% for career in site.data.careers %}
+      <li class="element-item {{ career.state }}">
+        <h2 itemprop="title">{{ career.title }}</h2>
+        <span>{{ career.location }} | {{ career.city }}, {{ career.state }}</span>
+        <a class="read-more" href="/pdfs/{{ career.pdf }}" target="_blank">More Information</a>
+      {% endfor %}
+      </li>
+    </ul>
+
+  </section>
+</div>

@@ -1,0 +1,15 @@
+#   slide: path to image
+#   caption-h2: sans-serif text
+#   caption-h2-span: serif text word
+
+- slide: HM_PropertyCarousel_2430.jpg
+  caption-h3: Vancouver Mall
+  caption-h3-span: A leading destination for a young, vibrant, thriving population
+
+- slide: HM_PropertyCarousel_2434.jpg
+  caption-h3: Fox Valley Mall
+  caption-h3-span: An integral part of the community serving generations
+
+- slide: HM_PropertyCarousel_2431.jpg
+  caption-h3: MainPlace Mall
+  caption-h3-span: A landmark entertainment destination serving a robust population

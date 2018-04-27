@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<section role="region">
+  <div class="banner">
+    <figure>
+      <img class="svg" src="{{ site.baseurl }}/images/{{ page.class }}/banner.svg" alt="{{ page.title }} page banner">
+
+      <figcaption>
+        <h1>{{ page.banner-title }}</h1>
+        <blockquote>
+          Our strong leadership team has a both a passion and a mission to put a distinctive Centennial stamp on every property in our portfolio.
+          <footer>— James Davis, EVP National Leasing</footer>
+        </blockquote>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="biography" class="biography" role="region">
+
+  <img src="{{ site.baseurl }}/images/{{ page.class }}/{{ page.photo }}.jpg" alt="{{ page.name }} photo">
+
+  <h3>{{ page.name }}</h3>
+  <h4>{{ page.title }}</h4>
+  <p>{{ page.bio }}</p>
+  {% if page.linkedin != nil %}
+  <a class="social-link" href="{{ page.linkedin }}" target="_blank">connect: <i class="fa fa-linkedin-square"></i></a>
+  {% endif %}
+
+</section>
+
+{% include footer.html %}
+
+{% include foot.html %}

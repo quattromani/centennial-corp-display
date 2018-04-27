@@ -1,0 +1,19 @@
+// =CTA's
+$cta-bg: transparent;
+$cta-padding-t-b: $half-spacing;
+$cta-padding-l-r: $double-spacing;
+$cta-bg-hover: transparent;
+$cta-border-radius: $base-border-radius;
+$cta-border-thickness: 2px;
+$cta-border-color: $color-brand-quaternary-tertiary;
+$cta-border-color-hover: darken($cta-border-color, 20%);
+$cta-link-color: $color-brand-quaternary-tertiary;
+$cta-link-color-hover: darken($cta-link-color, 20%);
+$cta-font-family: $base-font-family;
+$cta-font-size: 22;
+$cta-button-font-size-tablet: 16;
+$cta-button-font-size-mobile: 16;
+$cta-font-weight: 400;
+$cta-text-transform: $base-button-text-transform;
+$cta-text-decoration: none;
+$cta-text-decoration-hover: none;

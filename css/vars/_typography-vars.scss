@@ -1,0 +1,50 @@
+// Typography Basics
+$base-font-reset: 10px;
+$base-font-size: 20;
+$base-font-size-tablet: 16;
+$base-font-size-mobile: 18;
+$base-font-weight: 400;
+$base-line-height: 1.2;
+$lede-font-size: $base-font-size * 1.125;
+$body-text: $base-font-size;
+$small-body-text: $base-font-size * .875;
+$disclaimer-text: $base-font-size * .75;
+$legal-text: $small-body-text;
+$sup-font-size: 75%;
+$p-last-of-type-margin-bottom: 0;
+
+// Modular Scale
+$modular-scale-ratio: 1.61803398875;
+
+// Google Fonts
+$google-fonts-url: 'https://fonts.googleapis.com/css?family=Open+Sans:400,800|Playfair+Display:400,400i,700i,900|Raleway:400,500,700,800|PT+Serif:400,700';
+
+// Font Families List
+// =Font Families List
+$font-faces: (
+  'CoreSans25': ('CoreSans/CoreSansD25', normal),
+  'CoreSans35': ('CoreSans/CoreSansD35', normal),
+  'CoreSans45': ('CoreSans/CoreSansD45', normal),
+  'CoreSans55': ('CoreSans/CoreSansD55', normal)
+);
+
+$font-path: 'https://s3.amazonaws.com/placewisesitecontent/fonts/';
+
+// Font Families
+$raleway: 'Raleway', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$playfair: "Playfair Display", serif;
+$base-font-family: $raleway;
+$base-font-family-alt: $open-sans;
+$fontawesome: 'FontAwesome';
+$pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+
+$coresans25: 'CoreSans25', sans-serif;
+$coresans35: 'CoreSans35', sans-serif;
+$coresans45: 'CoreSans45', sans-serif;
+$coresans55: 'CoreSans55', sans-serif;
+
+// Inline Text Elements
+$em-color: $base-font-color;
+$mark-bg: $info-color;
+$mark-color: $base-font-color;

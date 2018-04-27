@@ -1,0 +1,239 @@
+---
+layout: default
+---
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.city }}, {{ page.state }}</h2>
+  </header>
+
+  <section class="stats">
+    <ul>
+      <li class="square-footage">
+        <div class="bars"></div>
+        <div class="slide-bottom">
+          <h2>{{ page.stats.box-1-stat }}</h2>
+          <span>{{ page.stats.box-1-detail }}</span>
+        </div>
+      </li>
+      <li class="population">
+        <div class="bars"></div>
+        <div class="slide-bottom">
+          <h2>{{ page.stats.box-2-stat }}</h2>
+          <span>{{ page.stats.box-2-detail }}</span>
+        </div>
+      </li>
+      <li class="income">
+        <div class="bars"></div>
+        <div class="slide-bottom">
+          <h2>{{ page.stats.box-3-stat }}</h2>
+          <span>{{ page.stats.box-3-detail }}</span>
+        </div>
+      </li>
+      <li class="age">
+        <div class="bars"></div>
+        <div class="slide-bottom">
+          <h2>{{ page.stats.box-4-stat }}</h2>
+          <span>{{ page.stats.box-4-detail }}</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="article-aside" role="region">
+    <aside class="push" role="complementary">
+      <div class="mall-carousel">
+        {% assign num = 0 %}
+        {% for img in page.carousel %}
+        {% assign num = num | plus:1 %}
+        <div>
+          <figure id="{{ num }}" class="modal-button" arial-controls="modal{{ num }}">
+            <img src="{{ site.baseurl }}/images/properties/{{ page.nick }}/{{ img }}" alt="{{ page.title }} property shot">
+            <figcaption>
+              <img class="svg" src="{{ site.baseurl }}/images/properties/{{ page.nick }}/mall-logo-white.svg" alt="{{ page.title }} logo">
+            </figcaption>
+          </figure>
+        </div>
+        {% endfor %}
+      </div>
+    </aside>
+
+    <article class="pull" role="article">
+      <address>{{ page.address }}, {{ page.city }}, {{ page.state }}, {{ page.zip }} | {{ page.phone }}</address>
+      <p class="mall-description banner-content">{{ page.description }}</p>
+      <br><br>
+      <a class="cta" href="{{ page.mall-url }}" target="_blank">Visit Website</a>
+    </article>
+  </section>
+
+  {% assign modalnum = 0 %}
+  {% for img in page.carousel %}
+  {% assign modalnum = modalnum | plus:1 %}
+  <!-- Modal -->
+  <div class="modal">
+
+    <div id="modal{{ modalnum }}" class="modal-container">
+      <div class="modal-close">&times;</div>
+      <div id="modal-content">
+
+        <div class="modal-header">
+          <h3>{{ page.title }}</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="slider slider-for">
+            {% for img in page.carousel %}
+            <div>
+              <img src="{{ site.baseurl }}/images/properties/{{ page.nick }}/{{ img }}" alt="{{ page.title }} property shot">
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ./ Modal -->
+  {% endfor %}
+  <div class="modal-overlay"></div>
+
+  <div class="factsheet-map-contacts">
+    <section role="region">
+      <div class="factsheet">
+        <ul>
+          <li>
+            <a href="{{ site.baseurl }}/pdfs/Fact-Sheet-{{ page.nick }}.pdf" target="_blank">
+
+              <div class="icon-block sheet">
+                <img class="svg" src="{{ site.baseurl }}/images/icons/factsheet.svg" alt="factsheet icon - link opens PDF in new window">
+                <span class="text">
+                  <h4>Fact Sheet</h4>
+                  <span class="read-more">View</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/pdfs/Lease-Site-Plans-{{ page.nick }}.pdf" target="_blank">
+              <div class="icon-block lease-plans">
+                <img class="svg" src="{{ site.baseurl }}/images/icons/lease-plans.svg" alt="lease plans icon - link opens PDF in new window">
+                <span class="text">
+                  <h4>Lease Plans</h4>
+                  <span class="read-more">View</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/pdfs/Leasing-Brochure-{{ page.nick }}.pdf" target="_blank">
+              <div class="icon-block leasing-brochure">
+                <img class="svg" src="{{ site.baseurl }}/images/icons/leasing-brochure.svg" alt="leasing brochure icon - link opens PDF in new window">
+                <span class="text">
+                  <h4>Leasing Brochure</h4>
+                  <span class="read-more">View</span>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {% if page.lat %}
+      <div class="map">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var myLatLng = {lat: {{ page.lat }}, lng: {{ page.long }}};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              scrollwheel: false,
+              center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map
+            });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9lb-TXHTNflAWVpJ8FFepWri0ewN_SC0&callback=initMap"async=""></script>
+      </div>
+      {% endif %}
+
+      <div class="contacts">
+        <h3>Leasing Contacts</h3>
+        <hr>
+
+        <ul>
+          <li>
+            <h5>Permanent Leasing</h5>
+            {% if page.permanent-leasing.category == "executive" %}
+            <a href="{{ page.permanent-leasing.link }}">
+              <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-white.svg" alt="card icon - links to bio page"></i>
+              <strong>{{ page.permanent-leasing.name }}</strong><br>
+            </a>
+            {% else %}
+            <strong>{{ page.permanent-leasing.name }}</strong><br>
+            {% endif %}
+            <span>
+              {% if page.permanent-leasing.title %}
+              {{ page.permanent-leasing.title }}<br>
+              {% endif %}
+              <a href="tel:{{ page.permanent-leasing.phone }}">(o) {{ page.permanent-leasing.phone }}</a>
+              <br>
+              <a href="mailto:{{ page.permanent-leasing.email }}">{{ page.permanent-leasing.email }}</a>
+            </span>
+
+            {% if page.permanent-leasing.name-2 != null %}
+            <br><br>
+            {% if page.permanent-leasing.category-2 == "executive" %}
+            <a href="{{ page.permanent-leasing.link }}">
+              <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-white.svg" alt="card icon - links to bio page"></i>
+              <strong>{{ page.permanent-leasing.name-2 }}</strong><br>
+            </a>
+            {% else %}
+            <strong>{{ page.permanent-leasing.name-2 }}</strong><br>
+            {% endif %}
+            <span>
+              {% if page.permanent-leasing.title-2 %}
+              {{ page.permanent-leasing.title-2 }}<br>
+              {% endif %}
+              <a href="tel:{{ page.permanent-leasing.phone-2 }}">(o) {{ page.permanent-leasing.phone-2 }}</a>
+              <br>
+              <a href="mailto:{{ page.permanent-leasing.email-2 }}">{{ page.permanent-leasing.email-2 }}</a>
+            </span>
+            {% endif %}
+          </li>
+          <li>
+            <h5>Specialty Leasing</h5>
+            {% if page.specialty-leasing.category == "executive" %}
+            <a href="{{ page.specialty-leasing.link }}">
+              <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-white.svg" alt="card icon - links to bio page"></i>
+              <strong>{{ page.specialty-leasing.name }}</strong><br>
+            </a>
+            {% else %}
+            <strong>{{ page.specialty-leasing.name }}</strong><br>
+            {% endif %}
+            <span>
+              {% if page.permanent-leasing.title %}
+              {{ page.specialty-leasing.title }}<br>
+              {% endif %}
+              <a href="tel:{{ page.specialty-leasing.phone }}">(o) {{ page.specialty-leasing.phone }}</a>
+              <br>
+              <a href="mailto:{{ page.specialty-leasing.email }}">{{ page.specialty-leasing.email }}</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section class="happenings">
+    <h3>Happening at {{ page.title }}</h3>
+    {% include curator.html %}
+  </section>
+
+</div>

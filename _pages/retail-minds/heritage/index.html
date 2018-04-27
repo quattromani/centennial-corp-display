@@ -1,0 +1,78 @@
+---
+title: Heritage
+permalink: "/retail-minds/heritage/"
+class: heritage
+parent: Retail Minds
+description:
+categories:
+---
+
+<section role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+
+  <section id="heritage" role="region">
+    {% for entry in site.data.heritage %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    <div class="heritage-block">
+      <div class="heritage-img">{% if entry.content-image %}<img src="{{ site.baseurl }}/images/heritage/{{ entry.content-image }}" alt="thumbnail of {{ entry.content-image-alt-text }}">{% endif %}</div>
+
+      {% if mod == 0 %}
+      <div class="heritage-content slide-left">
+        <div class="bars"></div>
+        <div class="mobile-shown">
+          {% if entry.date-range-1 and entry.date-range-2 %}
+          <time datetime="{{ entry.date-range-1 }}/{{ entry.date-range-2 }}">{{ entry.date }}</time>
+          {% else %}
+          <time datetime="{{ entry.date }}">{{ entry.date }}</time>
+          {% endif %}
+        </div>
+        <p {% if entry.content-image != true %} class="right" {% endif %}>{{ entry.content }}</p>
+
+        {% if entry.content-image %}
+        <img class="image-left" src="{{ site.baseurl }}/images/heritage/{{ entry.content-image }}" alt="{{ entry.content-image-alt-text }}">
+        {% endif %}
+
+        <div class="mobile-hidden">
+          {% if entry.date-range-1 and entry.date-range-2 %}
+          <time datetime="{{ entry.date-range-1 }}/{{ entry.date-range-2 }}">{{ entry.date }}</time>
+          {% else %}
+          <time datetime="{{ entry.date }}">{{ entry.date }}</time>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if mod != 0 %}
+      <div class="heritage-content slide-right">
+        <div class="bars"></div>
+        <div class="mobile-shown">
+          {% if entry.date-range-1 and entry.date-range-2 %}
+          <time datetime="{{ entry.date-range-1 }}/{{ entry.date-range-2 }}">{{ entry.date }}</time>
+          {% else %}
+          <time datetime="{{ entry.date }}">{{ entry.date }}</time>
+          {% endif %}
+        </div>
+        <p>{{ entry.content }}</p>
+
+        {% if entry.content-image %}
+        <img class="image-right" src="{{ site.baseurl }}/images/heritage/{{ entry.content-image }}" alt="{{ entry.content-image-alt-text }}">
+        {% endif %}
+
+        <div class="mobile-hidden">
+          {% if entry.date-range-1 and entry.date-range-2 %}
+          <time datetime="{{ entry.date-range-1 }}/{{ entry.date-range-2 }}">{{ entry.date }}</time>
+          {% else %}
+          <time datetime="{{ entry.date }}">{{ entry.date }}</time>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+</div>
+

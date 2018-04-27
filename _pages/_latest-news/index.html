@@ -1,0 +1,81 @@
+---
+layout: news
+title: Latest News
+permalink: "/latest-news/"
+class: latest-news
+parent: Latest News
+description:
+categories:
+---
+
+<div class="filter-bar">
+  <ul>
+    <li>
+      <div class="select">
+        <select class="filters-select">
+          <option value="">{{ 'Filter by Month/Year' | upcase }}</option>
+          <option value="*">All</option>
+          {% for post in site.posts %}
+          {% assign currentdate = post.date | date: "%B %Y" %}
+          {% if currentdate != date %}
+          <option value=".{{ category[0] | replace:' ','-' }}-ref">{{ currentdate }}</option>
+          {% assign date = currentdate %}
+          {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+    </li>
+
+    <li>
+      <div class="select">
+        <select class="filters-select">
+          <option value="">{{ 'Filter by Category' | upcase }}</option>
+          <option value="*">All</option>
+          {% assign categories_list = site.categories %}
+          {% for category in categories_list %}
+          <option value=".{{ category | first }}">{{ category[0] | capitalize }}</option>
+          {% endfor %}
+          {% assign categories_list = nil %}
+        </select>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<ul class="grid">
+  {% for post in site.posts %}
+  <li class="{{ post.category }}">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <figure>
+      <img src="" alt="">
+      <span class="title">{{ post.title }}</span>
+      <a href="{{ site.baseurl }}{{ post.permalink }}">
+        <figcaption>
+          {{ post.excerpt | truncatewords: 25 }}<br>
+          <p class="read-more">Read More</p>
+        </figcaption>
+      </a>
+    </figure>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="blog-view-more">
+  <a class="btn" href="">View More</a>
+</div>
+
+<ul class="{{ page.class }}-social" itemscope itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="{{ site.url }}">
+  {% for social in site.data.socials %}
+  <li>
+    <a itemprop="sameAs" href="{{ social.url }}{{ social.username }}/" target="_blank" rel="noopener noreferrer" aria-label="{{ social.name }}">
+      <i class="fa fa-{{ social.name | downcase }} fa-2x" aria-hidden="true" title="Visit us on {{ social.name }}"></i>
+    </a>
+  </li>
+  {% endfor %}
+  <li>
+    <a href="mailto:{{ site.email }}" aria-label="Email {{ site.title }}">
+      <i class="fa fa-envelope-o fa-2x" aria-hidden="true" title="Send us an email"></i>
+    </a>
+  </li>
+</ul>

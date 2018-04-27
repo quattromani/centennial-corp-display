@@ -1,0 +1,186 @@
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-{{site.jquery-version}}.js" integrity="{{site.jquery-integrity}}" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-{{site.jquery-version}}.min.js"><\/script>')</script>
+
+<script>
+  var smallBreakPoint = 480;
+  var mediumBreakPoint = 768;
+</script>
+
+<script src="https://use.fontawesome.com/{{site.fontawesome-id}}.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/jquery.selectric.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/jquery.comein.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/jquery.fadethis.js"></script>
+<script src="{{ site.baseurl }}/js/vendor/slick.min.js"></script>
+<script src="{{ site.baseurl }}/js/production.min.js"></script>
+
+{% if page.layout == 'home' %}
+<script src="{{ site.baseurl }}/js/vendor/curator.js"></script>
+<script>
+  if ($(window).width() <= mediumBreakPoint) {
+    var widget = new Curator.Carousel({
+      container: '#curator-feed',
+      feedId: '{% if page.curator-id %}{{ page.curator-id }}{% else %}{{ site.curator-id }}{% endif %}',
+      postCount: 12,
+      filter: {
+        showNetworks: false,
+        networksLabel: 'Networks:',
+        showSources: false,
+        sourcesLabel: 'Sources:',
+      },
+      carousel: {
+        autoPlay: true,
+        minWidth: 170,
+        infinite: true
+      }
+    });
+  } else {
+    var widget = new Curator.Carousel({
+      container: '#curator-feed',
+      feedId: '{% if page.curator-id %}{{ page.curator-id }}{% else %}{{ site.curator-id }}{% endif %}',
+      postCount: 12,
+      filter: {
+        showNetworks: false,
+        networksLabel: 'Networks:',
+        showSources: false,
+        sourcesLabel: 'Sources:',
+      },
+      carousel: {
+        autoPlay: true,
+        minWidth: 250,
+        infinite: true
+      }
+    });
+  }
+</script>
+{% endif %}
+
+{% if page.layout == 'mall' %}
+<script src="{{ site.baseurl }}/js/vendor/curator.js"></script>
+<script>
+  if ($(window).width() <= mediumBreakPoint) {
+    var widget = new Curator.Carousel({
+      container: '#curator-feed',
+      feedId: '{% if page.curator-id %}{{ page.curator-id }}{% else %}{{ site.curator-id }}{% endif %}',
+      postCount: 12,
+      filter: {
+        showNetworks: false,
+        networksLabel: 'Networks:',
+        showSources: false,
+        sourcesLabel: 'Sources:',
+      },
+      carousel: {
+        autoPlay: true,
+        minWidth: 170,
+        infinite: true
+      }
+    });
+  } else {
+    var widget = new Curator.Carousel({
+      container: '#curator-feed',
+      feedId: '{% if page.curator-id %}{{ page.curator-id }}{% else %}{{ site.curator-id }}{% endif %}',
+      postCount: 12,
+      filter: {
+        showNetworks: false,
+        networksLabel: 'Networks:',
+        showSources: false,
+        sourcesLabel: 'Sources:',
+      },
+      carousel: {
+        autoPlay: true,
+        minWidth: 250,
+        infinite: true
+      }
+    });
+  }
+</script>
+{% endif %}
+
+{% if page.layout == 'map' %}
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+  var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'masonry',
+    masonry: {
+      isFitWidth: true
+    }
+  });
+
+  $('path').click(function(e) {
+    var filterID = this.id;
+    var dataState = $(this).data('state');
+
+    e.preventDefault();
+
+    var target = $('#properties');
+    var $target = $(target);
+
+    $('html, body').animate({
+      scrollTop: $(target).offset().top - headerHeight
+    }, 900);
+
+    $('path').removeClass("hovered");
+
+    $('.factsheet h3 span').empty();
+    if (!!dataState) {
+      $(this).addClass("hovered");
+      $('.factsheet h3 span').append(': ' + dataState);
+      $grid.isotope({ filter: '.' + filterID });
+    } else {
+      $grid.isotope({ filter: '*' });
+    }
+  });
+
+  $('.filters-select').on( 'change', function() {
+    var filterValue = this.value;
+    var dataState = $(this).find(':selected').text();
+    $('.factsheet h3 span').empty();
+
+    if (dataState === 'VIEW ALL') {
+      $grid.isotope({ filter: '*' });
+    } else {
+      $('path#' + dataState).click();
+    }
+  });
+</script>
+
+{% endif %}
+
+{% if page.layout == 'careers' %}
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+  var $grid = $('.job-list').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('.filters-select').on( 'change', function() {
+    var filterValue = this.value;
+    $grid.isotope({ filter: filterValue });
+
+    if (dataState === 'VIEW ALL') {
+      $grid.isotope({ filter: '*' });
+    }
+  });
+</script>
+
+{% endif %}
+
+<script>
+  $(window).load(function() {
+    $('.crt-post-content-text').ellipsis({
+      lines: 3,
+      responsive: true
+    });
+  });
+</script>
+
+{% if site.google-analytics %}
+{% include google-analytics.html %}
+{% endif %}
+</body>
+</html>

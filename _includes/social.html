@@ -1,0 +1,15 @@
+<ul class="footer-social" itemscope itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="{{ site.url }}">
+  {% for social in site.data.socials %}
+  <li>
+    <a itemprop="sameAs" href="{{ social.url }}{{ social.username }}/" target="_blank" rel="noopener noreferrer" aria-label="{{ social.name }}">
+      <i class="fa fa-{{ social.name | downcase }} fa-2x" aria-hidden="true" title="Visit us on {{ social.name }}"></i>
+    </a>
+  </li>
+  {% endfor %}
+  <li>
+    <a href="mailto:{{ site.email }}" aria-label="Email {{ site.title }}">
+      <i class="fa fa-envelope-o fa-2x" aria-hidden="true" title="Send us an email"></i>
+    </a>
+  </li>
+</ul>

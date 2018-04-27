@@ -1,0 +1,116 @@
+---
+layout: default
+title: SEE Centennial Action Plan
+subtitle: Transforming Our Centers
+subsubtitle: Featured SEE Case Studies
+permalink: "/retail-minds/sustainability/"
+class: sustainability
+parent: Retail Minds
+description:
+categories:
+---
+
+<section role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <section id="sustainability" role="region">
+    {% for entry in site.data.sustainability %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    <div class="sustainability-block">
+      <div class="sustainability-img">{% if entry.content-image %}<img src="{{ site.baseurl }}/images/sustainability/{{ entry.content-image }}" alt="thumbnail of {{ entry.content-image-alt-text }}">{% endif %}</div>
+
+      {% if mod == 0 %}
+      <div class="sustainability-content slide-left">
+        <div class="bars"></div>
+        <p {% if entry.content-image != true %} class="right" {% endif %}>{{ entry.content }}</p>
+      </div>
+      {% endif %}
+
+      {% if mod != 0 %}
+      <div class="sustainability-content slide-right">
+        <div class="bars"></div>
+        <p>{{ entry.content }}</p>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+</div>
+
+<section id="transforming-our-centers" class="transforming-our-centers" role="region">
+
+  <header>
+    <h1>
+      {{ page.subtitle }}
+      <span>{{ page.subsubtitle }}</span>
+    </h1>
+
+  </header>
+
+  <div class="sustainability-carousel">
+    {% for mall in site.malls %}
+    {% if mall.sustainability == true %}
+    <div>
+      <section role="region">
+        <aside class="push" role="complementary">
+          <figure>
+            <img src="{{ site.baseurl }}/images/properties/{{ mall.nick }}/{{ mall.sustainability-image }}" alt="{{ mall.title }} property shot">
+            <figcaption>
+              <img class="svg" src="{{ site.baseurl }}/images/properties/{{ mall.nick }}/mall-logo-white.svg" alt="{{ mall.title }} logo">
+            </figcaption>
+          </figure>
+        </aside>
+
+        <article class="pull" role="article">
+          <h4>{{ mall.sustainability-title }}</h4>
+          <p>{{ mall.sustainability-text }}</p>
+        </article>
+      </section>
+
+      <section role="region">
+        <div class="stats">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ mall.sustainability-stats.box-1-icon }}" alt="{{ mall.sustainability-stats.box-1-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ mall.sustainability-stats.box-1-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ mall.sustainability-stats.box-2-icon }}" alt="{{ mall.sustainability-stats.box-2-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ mall.sustainability-stats.box-2-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ mall.sustainability-stats.box-3-icon }}" alt="{{ mall.sustainability-stats.box-3-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ mall.sustainability-stats.box-3-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ mall.sustainability-stats.box-4-icon }}" alt="{{ mall.sustainability-stats.box-4-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ mall.sustainability-stats.box-4-stat }}</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

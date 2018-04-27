@@ -1,0 +1,60 @@
+---
+layout: default
+title: Leadership
+subtitle: The Team
+permalink: "/retail-minds/leadership/"
+class: leadership
+parent: Retail Minds
+description:
+categories:
+---
+
+<section role="region">
+  {% include_relative banner.html %}
+</section>
+
+<header>
+  <h1>Executive</h1>
+</header>
+
+<section id="executive-team" class="executive-team" role="region">
+  {% for employee in site.data.employees %}
+  {% if employee.category == "executive" %}
+  <figure>
+    <img src="{{ site.baseurl }}/images/{{ page.class }}/{{ employee.photo }}.jpg" alt="{{ employee.name }}">
+    <figcaption>
+      <span class="name">{{ employee.name }}</span>
+      <span class="title">{{ employee.title }}</span>
+      <a class="read-more" href="{{ page.permalink }}{{ employee.name | replace: ' ', '-' | downcase }}/">view bio</a>
+    </figcaption>
+  </figure>
+
+  {% endif %}
+  {% endfor %}
+</section>
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.subtitle }}</h1>
+  </header>
+
+  <section id="senior-management" class="senior-management" role="region">
+    {% for employee in site.data.employees %}
+    {% if employee.category != "executive" %}
+    <figure>
+      <img src="{{ site.baseurl }}/images/{{ page.class }}/{{ employee.photo }}.jpg" alt="{{ employee.name }}">
+      <figcaption>
+        <span class="name">{{ employee.name }}</span>
+        <span class="title">{{ employee.title }}</span>
+        <a class="read-more" href="">contact</a>
+        <a class="phone" href="tel:{{ employee.phone }}">PH: {{ employee.phone }}</a>
+        <a class="email" href="mailto:{{ employee.email | encode_email }}" target="_top">email {{ employee.name }}</a>
+      </figcaption>
+    </figure>
+
+    {% endif %}
+    {% endfor %}
+  </section>
+
+</div>

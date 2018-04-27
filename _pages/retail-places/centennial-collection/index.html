@@ -1,0 +1,66 @@
+---
+layout: map
+title: The Centennial Collection
+subtitle: Where We Are
+permalink: "/retail-places/centennial-collection/"
+class: centennial-collection
+parent: Retail Places
+description:
+categories:
+---
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.subtitle }}</h1>
+  </header>
+
+  <section id="svg-map" role="region">
+
+    {% include map/USAMap.svg %}
+
+    <form>
+      <div class="select" role="search">
+        <select class="selectric filters-select">
+          <option value="*" selected>{{ 'Filter by State' | upcase }}</option>
+          <option value="*">{{ 'View All' | upcase }}</option>
+          {% assign malls = site.malls | sort:'state' | map:'state' | uniq %}
+          {% for mall in malls %}
+          <option value=".{{ mall }}" data-state="{{ mall }}">{{ mall }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </form>
+
+  </section>
+
+  <div id="properties" class="properties">
+    <section role="region">
+      <div class="factsheet">
+        <h3>The Centennial Collection<span></span></h3>
+      </div>
+
+      <ul class="grid">
+        {% assign malls = site.malls | sort: 'title' %}
+        {% for mall in malls %}
+        <li class="element-item {{ mall.state }}">
+          <a class="card" href="{{ site.baseurl }}{{ mall.permalink }}">
+            <figure>
+              <img src="{{ site.baseurl }}/images/properties/{{ mall.nick | downcase }}/mallThumb_{{ mall.mallid }}.jpg" alt="{{ mall.title }} property shot">
+              <figcaption>
+                <span>
+                  <img class="svg" src="{{ site.baseurl }}/images/properties/{{ mall.nick }}/mall-logo-white.svg" alt="{{ mall.title }} logo">
+                </span>
+              </figcaption>
+            </figure>
+            <footer>
+              <p>{{ mall.title }}</p>
+              <span>{{ mall.city }}, {{ mall.state }}</span>
+            </footer>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>

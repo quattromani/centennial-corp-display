@@ -1,0 +1,68 @@
+// Headings
+$heading-font-family: $base-font-family;
+$heading-font-family-alt: $playfair;
+$heading-color-primary: $color-brand-secondary;
+$heading-color-secondary: $color-brand-primary;
+$heading-line-height: 1;
+
+$h1: 45;
+$h1-tablet: 40px;
+$h1-mobile: 40px;
+$h1-color: $heading-color-primary;
+$h1-letter-spacing: .1em;
+$h1-text-transform: uppercase;
+$h1-line-height: $base-line-height;
+$h1-line-height-tablet: $h1-line-height;
+$h1-line-height-mobile: $h1-line-height;
+
+$h2: 26;
+$h2-tablet: 36px;
+$h2-mobile: 34px;
+$h2-color: $heading-color-primary;
+$h2-letter-spacing: .05em;
+$h2-text-transform: uppercase;
+$h2-line-height: $base-line-height;
+$h2-line-height-tablet: $h2-line-height;
+$h2-line-height-mobile: $h2-line-height;
+
+$h3: 45;
+$h3-tablet: 30px;
+$h3-mobile: 30px;
+$h3-color: $heading-color-primary;
+$h3-letter-spacing: .05em;
+$h3-text-transform: uppercase;
+$h3-line-height: $base-line-height;
+$h3-line-height-tablet: 1.2;
+$h3-line-height-mobile: $h3-line-height;
+
+$h4: 22;
+$h4-tablet: 28px;
+$h4-mobile: 24px;
+$h4-color: $heading-color-primary;
+$h4-letter-spacing: 0;
+$h4-text-transform: uppercase;
+$h4-line-height: $base-line-height;
+$h4-line-height-tablet: $h4-line-height;
+$h4-line-height-mobile: $h4-line-height;
+
+$h5: 20px;
+$h5-tablet: 18px;
+$h5-mobile: 20px;
+$h5-color: $heading-color-secondary;
+$h5-font-weight: 200;
+$h5-letter-spacing: 0;
+$h5-text-transform: none;
+$h5-line-height: $base-line-height;
+$h5-line-height-tablet: $h5-line-height;
+$h5-line-height-mobile: $h5-line-height;
+
+$h6: 18px;
+$h6-tablet: 18px;
+$h6-mobile: 18px;
+$h6-color: $heading-color-secondary;
+$h6-font-weight: 200;
+$h6-letter-spacing: 0;
+$h6-text-transform: none;
+$h6-line-height: $base-line-height;
+$h6-line-height-tablet: $h6-line-height;
+$h6-line-height-mobile: $h6-line-height;

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Commitment to Communities
+subtitle: Centennial Outreach at Work
+permalink: "/retail-minds/commitment-to-communities/"
+class: commitment-to-communities
+parent: Retail Minds
+description:
+categories:
+---
+
+<section role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+  <section id="commitment-to-communities" role="region">
+
+    <header>
+      <h1>{{ page.subtitle }}</h1>
+    </header>
+
+    <div class="community-carousel">
+      {% for mall in site.malls %}
+      {% if mall.CTC == true %}
+      <div>
+        <aside class="push" role="complementary">
+          <figure>
+            <img src="{{ site.baseurl }}/images/properties/{{ mall.nick }}/{{ mall.CTC-image }}" alt="{{ mall.title }} property shot">
+            <figcaption>
+              <img class="svg" src="{{ site.baseurl }}/images/properties/{{ mall.nick }}/mall-logo-white.svg" alt="{{ mall.title }} logo">
+            </figcaption>
+          </figure>
+        </aside>
+
+        <article class="pull" role="article">
+          <h4>{{ mall.CTC-title }}</h4>
+          <p>{{ mall.CTC-text }}</p>
+        </article>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

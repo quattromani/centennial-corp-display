@@ -1,0 +1,249 @@
+- name: Steven Levin
+  category: executive
+  title: 'Founder and CEO'
+  phone:
+  email:
+  photo: Levin-Steven
+
+- name: Steven Weiss
+  category: executive
+  title: 'Sr. EVP, Real Estate'
+  phone: 972.210.3521
+  email: sweiss@CentennialREC.com
+  photo: Weiss-Steven
+
+- name: Mark Thorsen
+  category: executive
+  title: 'Sr. EVP, Asset Management'
+  phone:
+  email:
+  photo: Thorsen-Mark
+
+- name: Oliver Robinson
+  category: executive
+  title: 'EVP, Development &amp; Construction'
+  phone:
+  email:
+  photo: Robinson-Oliver
+
+- name: Jim Davis
+  category: executive
+  title: 'EVP, National Leasing'
+  phone: 972.210.3525
+  email: jdavis@CentennialREC.com
+  photo: Davis-Jim
+
+- name: Maria Lutzow
+  category: executive
+  title: 'SVP, Finance & Chief Accounting Officer'
+  phone: female
+  email: mlutzow@CentennialREC.com
+  photo: Lutzow-Maria
+
+- name: Deborah Georgetti-Piro
+  category: team
+  title: 'SVP, Business Development'
+  phone: 972.210.3530
+  email: dgeorgettipiro@CentennialREC.com
+  photo: GeorgettiPiro-Deborah
+  linkedin: https://www.linkedin.com/in/deborah-georgetti-piro-cls-crx-b2327213/
+
+- name: Glenn Rosen
+  category: team
+  title: 'SVP, National Leasing'
+  phone: 972.888.8000
+  email: rosen@CentennialREC.com
+  photo: Rosen-Glenn
+  linkedin:
+
+- name: Earl K. Harris
+  category: team
+  title: 'SVP, National Leasing, Anchors & Pads'
+  phone: 972.210.3520
+  email: eharris@CentennialREC.com
+  photo: Harris-Earl
+  linkedin: https://www.linkedin.com/in/earl-k-harris-9676b477/
+
+- name: Clay Walton
+  category: team
+  title: 'SVP, National Leasing'
+  phone: 972.888.8002
+  email: cwalton@CentennialREC.com
+  photo: Walton-Clay
+  linkedin:
+
+- name: Kevin Connell
+  category: team
+  title: 'SVP, Development & Construction'
+  phone: 972.210.3555
+  email: kconnell@CentennialREC.com
+  photo: Connell-Kevin
+  linkedin: https://www.linkedin.com/in/kevin-connell-52570b7/
+
+- name: Stephen White
+  category: team
+  title: 'SVP, Asset Management & Operations'
+  phone: 972.210.3551
+  email: swhite@CentennialREC.com
+  photo: White-Steven
+  linkedin:
+
+- name: Nicholas Bendorf
+  category: team
+  title: 'VP, Investments & Development'
+  phone: 972.210.3536
+  email: nbendorf@CentennialREC.com
+  photo: Bendorf-Nicholas
+  linkedin: https://www.linkedin.com/in/nick-bendorf-62498a1b/
+
+- name: Colleen Heydon
+  category: team
+  title: 'VP, Marketing'
+  phone: 718-559-6521
+  email: cheydon@CentennialREC.com
+  photo: Heydon-Colleen
+  linkedin: https://www.linkedin.com/in/colleen-heydon-b2a0149/
+
+- name: Rusty Fogel
+  category: team
+  title: 'Director, Property Accounting'
+  phone: 972.888.8014
+  email: rfogel@CentennialREC.com
+  photo: Fogel-Rusty
+  linkedin: https://www.linkedin.com/in/russell-rusty-fogel-7a539b39/
+
+- name: Nick Tuszynski
+  category: team
+  title: 'Director, Financial Planning and Analysis'
+  phone: 972.210.3565
+  email: ntuszynski@CentennialREC.com
+  photo: Tuszynski-Nick
+  linkedin: https://www.linkedin.com/in/nicktuszynski/
+
+- name: Kristin Israelian
+  category: team
+  title: 'Manager, Corporate Branding and Innovation'
+  phone: 972.888.8027
+  email: kisraelian@CentennialREC.com
+  photo: Isralean-Kristin
+  linkedin: https://www.linkedin.com/in/kristin-raelian-25b98a31/
+
+- name: Todd Levin
+  category: team
+  title: 'Manager, Experiential Entertainment'
+  phone:
+  email:
+  photo: Levin-Todd
+  linkedin:
+
+- name: Monica Cobbin
+  category: team
+  title: 'Manager, Treasury'
+  phone: 972.210.3562
+  email: mcobbin@CentennialREC.com
+  photo: Cobbin-Monica
+  linkedin: https://www.linkedin.com/in/monica-cobbin-b8a762139/
+
+- name: Alice Sutherland
+  category: team
+  title: 'Manager, Leasing & Development'
+  phone: 972.888.8042
+  email: asutherland@CentennialREC.com
+  photo: Sutherland-Alice
+  linkedin: none
+
+- name: Natalie Gradick
+  category: team
+  title: 'Manager, Property Accounting'
+  phone: 972.210.3546
+  email: ngradick@CentennialREC.com
+  photo: Gradick-Natalie
+  linkedin: https://www.linkedin.com/in/natalie-gradick-03200813/
+
+- name: Wanda Langford
+  category: team
+  title: 'Manager, Accounts Receivable'
+  phone: 972.888.8056
+  email: wlangford@CentennialREC.com
+  photo: Langford-Wanda
+  linkedin: outdated
+
+- name: Susan Cisneros
+  category: team
+  title: 'Sr. Property Accountant'
+  phone: 972.210.3543
+  email: scisneros@CentennialREC.com
+  photo: Cisneros-Susan
+  linkedin: none
+
+- name: Ashley Hopkins
+  category: team
+  title: 'Lease Accountant'
+  phone:
+  email: ahopkins@CentennialREC.com
+  photo: Hopkins-Ashley
+  linkedin:
+
+- name: Austen Klauser
+  category: team
+  title: 'Analyst, Investments'
+  phone: 972.210.3537
+  email: aklauser@CentennialREC.com
+  photo: Klauser-Austen
+  linkedin: https://www.linkedin.com/in/austen-klauser-39087a69/
+
+# - name: Abbey Baxter
+#   category: team
+#   title: Lease Administrator
+#   phone: 972.210.3545
+#   email: abaxter@CentennialREC.com
+#   photo: Baxter-Abbey
+#   linkedin: https://www.linkedin.com/in/abbey-baxter-52babb82/
+
+- name: Gena Brown
+  category: team
+  title: 'Accounts Payable'
+  phone: 972.210.3541
+  email: gbrown@CentennialREC.com
+  photo: Brown-Gena
+  linkedin: https://www.linkedin.com/in/gena-brown-450346b2/
+
+- name: Vallerie Cavaness
+  category: team
+  title: 'Accounts Receivable Accountant'
+  phone:
+  email: vcavaness@CentennialREC.com
+  photo: Cavaness-Vallerie
+  linkedin:
+
+- name: Joseph Midkiff
+  category: team
+  title: 'Property Accountant'
+  phone: 972.210.3540
+  email:
+  photo: Midkiff-Joe
+  linkedin:
+
+- name: Julie Jones
+  category: team
+  title: 'National Operations'
+  phone:
+  email: jjones@centennialrec.com
+  photo: Jones-Julie
+  linkedin:
+
+- name: Kristie Klescewski
+  category: team
+  title: 'Executive Assistant'
+  phone: 972.210.3552
+  email: kklescewski@CentennialREC.com
+  photo: Klescewski-Kristie
+  linkedin: https://www.linkedin.com/in/kristie-escewski-3222837a/
+
+- name: Sarah Owen
+  category: team
+  title: 'Executive Assistant'
+  phone: 972.210.3526
+  email: sowen@CentennialREC.com
+  photo: Owen-Sarah
+  linkedin: none

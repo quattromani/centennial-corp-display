@@ -1,0 +1,14 @@
+<nav role="navigation" aria-label="Footer Navigation">
+  <ul role="menubar" itemscope itemtype="http://www.schema.org/SiteNavigationElement" aria-hidden="false">
+    {% assign links = site.data.footernav %}
+    {% for link in links %}
+    {% assign current = nil %}
+    {% if page.url contains link.url %}
+      {% assign current = 'aria-current="page"' %}
+    {% endif %}
+    <li role="none">
+      <a role="menuitem" href="{{ link.url | prepend: site.baseurl }}" itemprop="url" {{ current }}><span itemprop="name">{{ link.title }}</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

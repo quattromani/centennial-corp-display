@@ -1,0 +1,15 @@
+  <header role="banner">
+    <div class="container">
+      <div class="logo" itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="{{ site.baseurl }}/">
+          <img itemprop="logo" src="{{ site.baseurl }}/images/{{ site.logo }}" alt="{{ site.title }} logo">
+        </a>
+      </div>
+
+      <button class="open-panel" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Mobile Navigation Control - open or close">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    {% include nav.html %}
+  </header>

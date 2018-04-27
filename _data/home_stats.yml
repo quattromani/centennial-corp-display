@@ -1,0 +1,73 @@
+#   slide: path to image
+#   caption-h2: sans-serif text
+#   caption-h2-span: serif text word
+
+# Row 1
+row-1:
+  - img: null
+    alt: null
+    h5: 50
+    h5-span: Years of <br> retail heritage
+    color: green
+
+  - img: HM_Stats_Row1-Image.jpg
+    alt: a wide shot of a mall foodcourt
+    h5: null
+    h5-span: null
+    color: null
+
+  # This is a repeat of the image above for mobile use
+  # If you changed the image above - change this one too
+  - img: HM_Stats_Row1-Image.jpg
+    mobile-shown: true
+    alt: a wide shot of a mall foodcourt
+    h5: null
+    h5-span: null
+    color: null
+
+  - img: null
+    alt: null
+    h5: 8
+    h5-span: Dominant <br> properties in<br> 6 states
+    color: teal
+
+  - img: null
+    alt: null
+    h5: null
+    h5-span: null
+    color: null
+
+# Row 2
+row-2:
+  - img: null
+    alt: null
+    h5: null
+    h5-span: null
+    color: null
+
+  - img: null
+    alt: null
+    h5: 7.8
+    h5-span: Million Square <br> Feet Tailored <br> To Communities
+    color: blue
+
+  - img: HM_Stats_Row2-Image.jpg
+    alt: friends enjoying the sun
+    h5: null
+    h5-span: null
+    color: null
+
+  # This is a repeat of the image above for mobile use
+  # If you changed the image above - change this one too
+  - img: HM_Stats_Row2-Image.jpg
+    mobile-shown: true
+    alt: friends enjoying the sun
+    h5: null
+    h5-span: null
+    color: null
+
+  - img: null
+    alt: null
+    h5: '1,136'
+    h5-span: Retail <br> Partners
+    color: orange

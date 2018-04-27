@@ -1,0 +1,57 @@
+# - date: this is what will appear on the page
+#   date-range-1: for items that span more than one year, this is the 1st year
+#   date-range-2: for items that span more than one year, this is the 2nd year
+#   thumbnail: circular thumbnail
+#   thumbnail-alt-text: every image needs alt text
+#   content: this is the text in the box
+#   content-image: the image in the box
+#   content-image-alt-text: every image needs alt text
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Form strategic partnerships to maintain robust national lighting and recycling programs'
+  content-image: lighting.svg
+  content-image-alt-text: picture
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Enhance and optimize building automation systems'
+  content-image: automatedSystems.svg
+  content-image-alt-text: picture
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Continually evaluate operations to uncover incremental best practices to support our sustainability commitment'
+  content-image: monthlyScorecard.svg
+  content-image-alt-text: picture
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Maintain a standard of low-VOC and nontoxic paints, sealants and cleaning products'
+  content-image: greenSeal.svg
+  content-image-alt-text: picture
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Engage the community on healthy sustainable living initiatives'
+  content-image: EnergyAudits.svg
+  content-image-alt-text:
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Promote environmentally friendly transit options by offering electrical vehicle charging stations, mass transit, ride share programs and bike racks'
+  content-image: HVAC.svg
+  content-image-alt-text:
+
+- date:
+  date-range-1:
+  date-range-2:
+  content: 'Actively monitor SEE Centennial key performance indicators to ensure progress in goal achievement'
+  content-image: communityGardens.svg
+  content-image-alt-text:

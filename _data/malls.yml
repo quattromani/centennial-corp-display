@@ -1,0 +1,205 @@
+- mallid: 2459
+  name: Centennial Real Estate
+  url: http://www.centennialrec.com/
+  description: Centennial Real Estate
+  address: 8750 N. Central Expressway, Suite 1740
+  city: Dallas
+  state: TX
+  zip: 75231
+  phone: 972.888.8000
+  mgr-phone:
+  security-phone:
+  email: info@centennialrec.com
+  mgr-email: kisraelian@centennialrec.com
+  conf-email: info@centennialrec.com
+  leasing-mgr-email:
+  lat: 32.8667908
+  long: -96.768423
+  timezone: America/Chicago
+  facebook: Centennial-Real-Estate-1749696368640867/
+  twitter: CentennialREC
+  instagram: centennialrec/
+
+- mallid: 2429
+  name: Brazos Mall
+  url: https://shopbrazosmall.com/
+  permalink: brazos-mall
+  description: Brazos Mall
+  address: 100 Hwy 332 W
+  city: Lake Jackson
+  state: TX
+  zip: 77566
+  phone: 979.297.8002
+  mgr-phone: 979.297.8001
+  security-phone: 979.248.8244
+  email: info@shopbrazosmall.com
+  mgr-email: akeprta@centennialrec.com
+  conf-email: akeprta@centennialrec.com
+  leasing-mgr-email: LDupaquier@centennialrec.com
+  lat: 29.0510059
+  long: -95.45872749999999
+  timezone: America/Chicago
+  facebook: TheBrazosMall
+  twitter: BrazosMall
+  instagram: shopbrazosmall/
+
+- mallid: 2430
+  name: Vancouver Mall
+  url: https://shopvancouvermall.com/
+  permalink: vancouver-mall
+  description: Vancouver Mall
+  address: 8700 N.E. Vancouver Mall Drive
+  city: Vancouver
+  state: WA
+  zip: 98662
+  phone: 360.256.8122
+  mgr-phone: 3602568122
+  security-phone: 3602568122
+  email: info@shopvancouvermall.com
+  mgr-email: jcurtis@centennialrec.com
+  conf-email: jcurtis@centennialrec.com
+  leasing-mgr-email: MDunn@centennialrec.com
+  lat: 45.6581804
+  long: -122.5837385
+  timezone: America/Los_Angeles
+  facebook: ShopVancouverMall/
+  twitter: shopvanmall/
+  instagram: ShopVanMall
+
+- mallid: 2431
+  name: MainPlace Mall
+  url: https://shopmainplacemall.com/
+  permalink: mainplace-mall
+  description: MainPlace Mall
+  address: 2800 N Main St.
+  city: Santa Ana
+  state: CA
+  zip: 92705
+  phone: 714.547.7800
+  mgr-phone: 714.559.6525
+  security-phone: 7145416047
+  email: info@shopmainplacemall.com
+  mgr-email: cyates@centennialrec.com
+  conf-email: cyates@centennialrec.com
+  leasing-mgr-email: FValle@centennialrec.com
+  lat: 33.7737648
+  long: -117.8674186
+  timezone: America/Los_Angeles
+  facebook: MainPlaceMall
+  twitter: ShopMainPlace
+  instagram: shopmainplacemall/
+
+- mallid: 2432
+  name: Hawthorn Mall
+  url: https://shophawthornmall.com/
+  permalink: hawthorn-mall
+  description: Hawthorn Mall
+  address: 122 Hawthorn Center
+  city: Vernon Hills
+  state: IL
+  zip: 60061
+  phone: 847.362.2600
+  mgr-phone:
+  security-phone: 847-362-5520
+  email: info@shophawthornmall.com
+  mgr-email: jmallars@centennialrec.com, mjosephson@centennialrec.com
+  conf-email: jmallars@centennialrec.com, mjosephson@centennialrec.com
+  leasing-mgr-email: tesp@centennialrec.com
+  lat: 42.2426147
+  long: -87.9499205
+  timezone: America/Chicago
+  facebook: shophawthornmall/
+  twitter: hawthorn_mall/
+  instagram: HawthornMall
+
+- mallid: 2433
+  name: Connecticut Post Mall
+  url: https://shopconnecticutpostmall.com/
+  permalink: connecticut-mall
+  description: Connecticut Post Mall
+  address: 1201 Boston Post Rd
+  city: Milford
+  state: CT
+  zip: 06460
+  phone: 203.301.2240
+  mgr-phone: 203.301.2241
+  security-phone: 203.301.2258
+  email: info@shopconnecticutpostmall.com
+  mgr-email: kfrantz@centennialrec.com
+  conf-email: kfrantz@centennialrec.com
+  leasing-mgr-email: JNetto@centennialrec.com
+  lat: 41.236614
+  long: -73.0362329
+  timezone: America/New_York
+  facebook: ConnecticutPostMall/
+  twitter: CTPostMall
+  instagram: connecticutpostmall/
+
+- mallid: 2434
+  name: Fox Valley Mall
+  url: https://shopfoxvalleymall.com/
+  permalink: foxvalley-mall
+  description: Fox Valley Mall
+  address: 195 Fox Valley Center
+  city: Aurora
+  state: IL
+  zip: 60504
+  phone: 630.851.7200
+  mgr-phone: 630.851.3000
+  security-phone: 630.851.4088
+  email: info@shopfoxvalleymall.com
+  mgr-email: karias@centennialrec.com
+  conf-email: karias@centennialrec.com
+  leasing-mgr-email: TEsp@centennialrec.com
+  lat: 41.7584501
+  long: -88.21274099999999
+  timezone: America/Chicago
+  facebook: FoxValleyMall/
+  twitter: FoxValleyMall
+  instagram: foxvalleymall/
+
+- mallid: 2435
+  name: Pueblo Mall
+  url: https://shoppueblomall.com/
+  permalink: pueblo-mall
+  description: Pueblo Mall
+  address: 3429 Dillon Drive
+  city: Pueblo
+  state: CO
+  zip: 81008
+  phone: 719.544.3454
+  mgr-phone: 719.544.3456
+  security-phone: 7195543820
+  email: info@shoppueblomall.com
+  mgr-email: KAlfonso@centennialrec.com
+  conf-email: KAlfonso@centennialrec.com
+  leasing-mgr-email: ASanchez@centennialrec.com
+  lat: 38.3031326
+  long: -104.6087924
+  timezone: America/Denver
+  facebook: PuebloMall/
+  twitter: ShopPuebloMall
+  instagram: pueblomall/
+
+- mallid: 2436
+  name: Chico Mall
+  url: https://shopchicomall.com/
+  permalink: chico-mall
+  description: Chico Mall
+  address: 1950 E 20th St
+  city: Chico
+  state: CA
+  zip: 95928
+  phone: 530.343.0706
+  mgr-phone: 530.343.0706
+  security-phone: 530.228.6525
+  email: info@shopchicomall.com
+  mgr-email: LMyers@centennialrec.com
+  conf-email: LMyers@centennialrec.com
+  leasing-mgr-email: MDishler@centennialrec.com
+  lat: 39.7283368
+  long: -121.806578
+  timezone: America/Los_Angeles
+  facebook: ChicoMall
+  twitter: ChicoMall
+  instagram: chicomall/

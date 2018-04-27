@@ -1,0 +1,44 @@
+---
+layout: content
+title: Reach Us
+permalink: "/retail-minds/reach-us/"
+class: reach-us
+parent: Retail Minds
+description:
+categories:
+---
+
+<p>Have a question or need a little more info?  Please feel free to reach out to us.</p>
+
+<div itemscope itemtype="http://schema.org/Organization">
+  <span itemprop="email">Email: <a href="mailto:hello@CentennialREC.com" target="_top">hello@CentennialREC.com</a></span>
+  <br>
+  <span itemprop="telephone">Office: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
+  <br>
+  <span itemprop="telephone">Fax: <a href="tel:{{ site.fax }}">{{ site.fax }}</a></span>
+
+  <span itemprop="name">{{ site.title }}</span><br>
+  <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">{{ site.map.address }}</span><br>
+    <span itemprop="addressLocality">{{ site.map.city }}</span>,
+    <span itemprop="addressRegion">{{ site.map.state }}</span> <span itemprop="postalCode">{{ site.map.zip }}</span>
+  </address>
+
+  <h4>Connect With Us</h4>
+  <hr>
+  <ul class="{{ page.class }}-social">
+    <link itemprop="url" href="{{ site.url }}">
+    {% for social in site.data.socials %}
+    <li>
+      <a itemprop="sameAs" href="{{ social.url }}{{ social.username }}/" target="_blank" rel="noopener noreferrer" aria-label="{{ social.name }}">
+        <i class="fa fa-{{ social.name | downcase }} fa-2x" aria-hidden="true" title="Visit us on {{ social.name }}"></i>
+      </a>
+    </li>
+    {% endfor %}
+    <li>
+      <a href="mailto:{{ site.email }}" aria-label="Email {{ site.title }}">
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true" title="Send us an email"></i>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,106 @@
+# - date: this is what will appear on the page
+#   date-range-1: for items that span more than one year, this is the 1st year
+#   date-range-2: for items that span more than one year, this is the 2nd year
+#   thumbnail: circular thumbnail
+#   thumbnail-alt-text: every image needs alt text
+#   content: this is the text in the box
+#   content-image: the image in the box
+#   content-image-alt-text: every image needs alt text
+
+- date: 1953
+  date-range-1:
+  date-range-2:
+  content: Eugene, Centennial Founder Steven Levin’s father, opens Margie’s, Inc.—a value-price women’s clothing retailer in downtown Dallas, Texas
+  content-image: CRP_Heritage_1953.jpg
+  content-image-alt-text: picture
+
+- date: 1966 - 68
+  date-range-1: 1966
+  date-range-2: 1968
+  content: "Steven holds his unofficial first job: sorting clothing hangers at Margie’s, Inc., in what the family affectionately dubbed “The Warehouse”"
+  content-image: CRP_Heritage_66-68.jpg
+  content-image-alt-text: picture
+
+- date: 1970
+  date-range-1:
+  date-range-2:
+  content: The Levins open the first Barnaby's store in Dallas; a brother concept to Margie's, Barnaby's specializes in value-price men's fashions
+  content-image: CRP_Heritage_1970.jpg
+  content-image-alt-text: picture
+
+- date: 1974
+  date-range-1:
+  date-range-2:
+  content: The first St. Denise store opens in Dallas, Texas
+  content-image: CRP_Heritage_1974.jpg
+  content-image-alt-text: picture
+
+- date: the 80's
+  date-range-1: 1980
+  date-range-2: 1989
+  content: Collection of three retail brands grows from 30 to 60 locations throughout the Southwest
+  content-image: null
+  content-image-alt-text:
+
+- date: 1982
+  date-range-1:
+  date-range-2:
+  content: The Levin Companies, Inc. was founded
+  content-image: null
+  content-image-alt-text:
+
+- date: 1997
+  date-range-1:
+  date-range-2:
+  content: Centennial Real Estate opens its corporate doors
+  content-image: CRP_Heritage_1997.jpg
+  content-image-alt-text:
+
+- date: 1998
+  date-range-1:
+  date-range-2:
+  content: Acquisition of five retail centers in Dallas/Ft. Worth
+  content-image: CRP_Heritage_1998.jpg
+  content-image-alt-text:
+
+- date: 2002
+  date-range-1:
+  date-range-2:
+  content: Centennial purchases their first enclosed mall, Lufkin Mall in Lufkin, Texas
+  content-image: null
+  content-image-alt-text:
+
+- date: 2003 - 06
+  date-range-1: 2003
+  date-range-2: 2006
+  content: Pueblo Mall plus additional neighborhood shopping centers join the Centennial portfolio.
+  content-image: CRP_Heritage_03-06.jpg
+  content-image-alt-text:
+
+- date: 2010 - 14
+  date-range-1: 2010
+  date-range-2: 2014
+  content: Centennial increases its organizational structure, buying centers that can benefit from the company’s retail perspective and hands-on approach to revitalization
+  content-image: CRP_Heritage_10-14.jpg
+  content-image-alt-text:
+
+- date: 2015
+  date-range-1:
+  date-range-2:
+  content: Centennial-led group acquires five malls in a $1.1 billion acquisition, fulfilling Steven’s vision of bringing his retail and shopping center experience to the enclosed mall sector
+  content-image: null
+  content-image-alt-text:
+
+- date: 2016
+  date-range-1:
+  date-range-2:
+  content: Centennial welcomes new members of senior leadership, undergoes a corporate rebranding effort, and continues to approach real estate from a retailer’s perspective
+  content-image: null
+  content-image-alt-text:
+
+- date: 2017
+  date-range-1:
+  date-range-2:
+  content: The SEE Centennial sustainability initiative launched at all mall properties, along with our commitment to incorporate a greener approach to operations, both as a property owner and community member.
+  content-image: SEECentennial.svg
+  content-image-alt-text:

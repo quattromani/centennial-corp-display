@@ -1,0 +1,114 @@
+# Site settings
+title: Centennial Real Estate
+email: hello@CentennialREC.com
+url-slug: centennial
+description: "Centennial Real Estate Company is a real estate firm specializing in the investment, development and management of retail properties including neighborhood community centers, enclosed malls and urban mixed-use."
+logo: "logo.svg"
+version: 0.0.1
+url: ""
+author: "Max Quattromani"
+
+# Build settings
+jquery-version: 2.1.3
+jquery-integrity: sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=
+
+# Fontawesome
+fontawesome-id: 4aa71f0649
+
+# Included Gems
+plugins: [jekyll-admin, jekyll-paginate, jekyll-email-protect]
+
+# AMP versions of pages go in this directory
+ampdir: amps
+
+# Collections
+collections:
+  malls:
+    output: true
+  leadership:
+    output: true
+
+# Writing
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+
+highlighter: rouge
+
+# Use pages inside the /_pages folder
+include: ["_pages"]
+
+# When pagination is required, set intervals
+paginate: 5
+
+# remove unnecessary strings from URLs
+permalink: none
+
+# Don't include in the build
+exclude: ['node_modules']
+
+# Googles
+google-verify:
+google-analytics: true
+google-analytics-id: UA-97731239-29
+google-maps-javascript-api-key:
+google-fonts: true
+
+maps:
+  google:
+    api_key: AIzaSyD9lb-TXHTNflAWVpJ8FFepWri0ewN_SC0
+
+# Manifest
+manifest_lang: en
+manifest_name: Centennial Corporate
+manifest_short_name: Centennial
+manifest_description: 'Centennial Real Estate Company is a real estate firm specializing in the investment, development and management of retail properties including neighborhood community centers, enclosed malls and urban mixed-use.'
+manifest_background_color: ffffff
+manifest_theme_color: ffffff
+manifest_display: browser
+manifest_orientation: standalone
+
+# Formspree codes
+formspree-footer-code:
+
+# Page-type Defaults
+defaults:
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "default"
+
+# Phyical Attributes
+map:
+  address: '8750 N. Central Expressway, Suite 1740'
+  city: 'Dallas'
+  state: 'TX'
+  zip: '75231'
+  latitude: '32.8667908'
+  longitude: '-96.768423'
+
+phone: '972.888.8000'
+
+# Contacts
+hello: hello@CentennialREC.com
+careers: hello@CentennialREC.com
+
+# Socials
+social:
+  facebook: Centennial-Real-Estate-1749696368640867/
+  twitter: CentennialREC
+  intagram: CentennialREC
+  linkedin: '1153705'
+
+# Curator
+curator-id: 5E3ECF2C-AC44-4EA4-9E30-DCACFAFE

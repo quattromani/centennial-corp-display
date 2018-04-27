@@ -1,0 +1,133 @@
+---
+title: 'Partnerships &amp; Marketing'
+subtitle: Partnerships and Marketing Opportunities
+permalink: "/retail-places/partnerships-marketing/"
+class: partnerships-marketing
+parent: Retail Places
+description:
+categories:
+marketing-contact-1:
+  name: Deborah Georgetti-Piro
+  title: SVP Business Development
+  category: team
+  link:
+  email: dgeorgettipiro@CentennialREC.com
+  phone: 972.210.3530
+marketing-contact-2:
+  name: Colleen Heydon
+  title: VP Marketing
+  category: team
+  link:
+  email: cheydon@CentennialREC.com
+  phone: 714.559.6521
+---
+
+<section class="banner" role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.subtitle }}</h1>
+  </header>
+
+  <div class="advertising" role="region">
+    <div class="container">
+      <article class="slide-in slide-in-left" role="article">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/advertising.jpg" alt="{{ page.title }} advertising image">
+      </article>
+
+      <aside class="slide-in slide-in-right" role="complementary">
+        <h3>Advertising</h3>
+        <p>From floor to ceiling, our mall media options are endless. Sky banners, standees, large format graphics and ad panels intersect lines of sight at the crossroads of shopping and entertainment. We can help find creative solutions for wraps and decals for vertical transport, or floor graphics that can pave the way to distribution points for your product or brand.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="digital-media" role="region">
+    <div class="container">
+      <aside class="push slide-in slide-in-right" role="complementary">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/digital-media.jpg" alt="{{ page.title }} digital-media image">
+      </aside>
+
+      <article class="pull slide-in slide-in-left" role="article">
+        <h3>Digital Media</h3>
+        <p>Leverage the power of our network to illuminate your message and brand. Digital billboards, interior LED screens and digital ad panels for your message are available through our digital network.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="events-experiences" role="region">
+    <div class="container">
+      <article class="slide-in slide-in-left" role="article">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/events-experiences.jpg" alt="{{ page.title }} events-experiences image">
+      </article>
+
+      <aside class="slide-in slide-in-right" role="complementary">
+        <h3>Events and Experiences</h3>
+        <p>Creating a unique experience is one of the most buzzworthy activations for a brand. Be the center of attention in our high traffic common areas – interior and exterior - which have space to accommodate tens to thousands. Concerts, appearances, TV promotions, sampling, or interactive demonstrations are just a few of the options to inspire devoted and new fans alike.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="sponsorships" role="region">
+    <div class="container">
+      <aside class="push slide-in slide-in-right" role="complementary">
+        <img src="{{ site.baseurl }}/images/{{ page.class }}/sponsorships.jpg" alt="{{ page.title }} sponsorships image">
+      </aside>
+
+      <article class="pull slide-in slide-in-left" role="article">
+        <h3>Sponsorships</h3>
+        <p>Showcase your brand in a sophisticated way to stand out to a targeted group and build long term loyalty. We can collaborate on a package that includes events, amenities, signage, and shopper engagement with a trusted partner embedded in the community.</p>
+      </article>
+    </div>
+  </div>
+
+  <section role="region">
+    <div class="contacts">
+      <h3>Connect with Centennial Leasing</h3>
+      <hr>
+
+      <ul>
+        <li>
+          <!-- <h5>Permanent Leasing</h5> -->
+          {% if page.marketing-contact-1.category == "executive" %}
+          <a href="{{ page.marketing-contact-1.link }}">
+            <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-teal.svg" alt="card icon - links to bio page"></i>
+            <strong>{{ page.marketing-contact-1.name }}</strong><br>
+          </a>
+          {% else %}
+          <strong>{{ page.marketing-contact-1.name }}</strong><br>
+          {% endif %}
+          <span>
+            {{ page.marketing-contact-1.title }}<br>
+            <a href="tel:{{ page.marketing-contact-1.phone }}">(o) {{ page.marketing-contact-1.phone }}</a>
+            <br>
+            <a href="mailto:{{ page.marketing-contact-1.email | encode_email }}">{{ page.marketing-contact-1.email }}</a>
+          </span>
+        </li>
+        <li>
+          <!-- <h5>Specialty Leasing</h5> -->
+          {% if page.marketing-contact-2.category == "executive" %}
+          <a href="{{ page.marketing-contact-2.link }}">
+            <i><img class="svg" src="{{ site.baseurl }}/images/icons/bio-card-teal.svg" alt="card icon - links to bio page"></i>
+            <strong>{{ page.marketing-contact-2.name }}</strong><br>
+          </a>
+          {% else %}
+          <strong>{{ page.marketing-contact-2.name }}</strong><br>
+          {% endif %}
+          <span>
+            {{ page.marketing-contact-2.title }}<br>
+            <a href="tel:{{ page.marketing-contact-2.phone }}">(o) {{ page.marketing-contact-2.phone }}</a>
+            <br>
+            <a href="mailto:{{ page.marketing-contact-2.email | encode_email }}">{{ page.marketing-contact-2.email }}</a>
+          </span>
+        </li>
+      </ul>
+
+      <a class="cta" href="{{ site.baseurl }}/retail-places/centennial-collection">View Portfolio</a>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,49 @@
+---
+layout: legal
+title: Sitemap
+permalink: "/sitemap/"
+class: sitemap
+parent: Sitemap
+description:
+search: exclude
+sitemap: exclude
+---
+
+<section class="banner" role="region">
+  {% include_relative banner.html %}
+</section>
+
+<div class="shadow">
+
+  <header>
+    <h1>{{ page.subtitle }}</h1>
+  </header>
+
+  <div class="container">
+
+    <h3>Pages</h3>
+    <ul>
+      {% for page in site.pages %}
+      {% unless page.sitemap == "exclude" %}
+      {% unless page.title == "Home" %}
+      <li>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </li>
+      {% endunless %}
+      {% endunless %}
+      {% endfor %}
+    </ul>
+
+    <hr>
+
+    <h3>Posts</h3>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>
