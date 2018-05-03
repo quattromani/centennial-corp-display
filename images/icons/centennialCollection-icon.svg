@@ -1,0 +1,26 @@
+<svg id="_ÎÓÈ_1" data-name="—ÎÓÈ_1" xmlns="http://www.w3.org/2000/svg" height="46" width="55" viewBox="0 0 3644.77 3026.62"><defs>
+  <style>
+    .cls-banana,
+    .cls-orange {
+      fill:#00bbb1;
+    }
+    .cls-banana,
+    .cls-pineapple,
+    .cls-orange {
+      stroke:#00bbb1;
+    }
+    .cls-banana,
+    .cls-pineapple {
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 150px;
+    }
+    .cls-pineapple {
+      fill:none;
+    }
+    .cls-orange {
+     stroke-linejoin: round;
+     stroke-width: 55.23px;
+    }
+  </style>
+</defs><title>centennialCollection</title><rect class="cls-banana" x="170.49" y="1353.24" width="142.77" height="1465.98"/><polygon class="cls-pineapple" points="739.25 2819.23 312.26 2819.23 312.26 985.9 739.25 1128.23 739.25 2819.23"/><rect class="cls-banana" x="4003.11" y="1938.23" width="150.78" height="1465.98" transform="translate(7474.39 4757.44) rotate(180)"/><polygon class="cls-pineapple" points="2895.52 2819.23 3322.51 2819.23 3322.51 985.9 2895.52 1128.23 2895.52 2819.23"/><path class="cls-pineapple" d="M3578.14,3404.23H1421.86V973.12S1592.66,660,2475.13,660c964.24,0,1103,313.12,1103,313.12Z" transform="translate(-682.61 -585)"/><path class="cls-pineapple" d="M1421.86,1745.25s316.68-234.84,1056.79-234.84c804.16,0,1099.49,234.84,1099.49,234.84" transform="translate(-682.61 -585)"/><path class="cls-pineapple" d="M1421.86,2194s316.68-206.38,1056.79-206.38c804.16,0,1099.49,206.38,1099.49,206.38" transform="translate(-682.61 -585)"/><path class="cls-pineapple" d="M1421.86,2614.3s316.68-177.91,1056.79-177.91c804.16,0,1099.49,177.91,1099.49,177.91" transform="translate(-682.61 -585)"/><path class="cls-pineapple" d="M1421.86,3025.7s316.68-121,1056.79-121c804.16,0,1099.49,121,1099.49,121" transform="translate(-682.61 -585)"/><line class="cls-pineapple" x1="1507.82" y1="2819.23" x2="1507.82" y2="2329.83"/><line class="cls-pineapple" x1="2135.85" y1="2820.6" x2="2135.85" y2="2328.47"/><line class="cls-pineapple" x1="1817.3" y1="2319.76" x2="1817.3" y2="2819.23"/><line class="cls-pineapple" x1="961.64" y1="1073.67" x2="961.64" y2="2819.23"/><line class="cls-pineapple" x1="1291.96" y1="976.41" x2="1291.96" y2="2819.23"/><line class="cls-pineapple" x1="2677.29" y1="1073.67" x2="2677.29" y2="2819.23"/><line class="cls-pineapple" x1="2364.16" y1="985.9" x2="2364.16" y2="2790.76"/><line class="cls-pineapple" x1="1817.3" y1="925.48" x2="1817.3" y2="2319.73"/><rect class="cls-orange" x="27.62" y="2823.88" width="3589.54" height="175.12"/></svg>

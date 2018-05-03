@@ -6,12 +6,9 @@
 #       url: "/this-is-the-url-link-for this child-page"
 #       active: "this is the category, keeps the nav bar section highlighted"
 
-- title: "Retail Minds"
-  url: "/retail-minds/heritage/"
-  sublinks:
-    - title: "Sustainability"
-      url: "/retail-minds/sustainability/"
-    - title: "Commitment to Communities"
-      url: "/retail-minds/commitment-to-communities/"
-- title: "The Centennial Collection"
+- title: 'SEE Centennial <span class="nav-bold">Sustainability</span>'
+  url: "/retail-minds/sustainability/"
+  icon: sustainability-icon.svg
+- title: 'The Centennial <span class="nav-bold">Collection</span>'
   url: "/retail-places/centennial-collection/"
+  icon: centennialCollection-icon.svg

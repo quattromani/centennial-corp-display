@@ -7,22 +7,12 @@
       {% if page.url contains link.url %}
       {% assign current = 'aria-current="page"' %}
       {% endif %}
-      {% if link.sublinks %}
       <li role="menuitem">
-        <a href="{{ site.baseurl }}{{ link.url }}" itemprop="url" {{ current }} aria-haspopup="true" aria-expanded="false"><span itemprop="name">{{ link.title }}</span></a>
-        <ul role="menu" aria-hidden="true" aria-label="submenu" tabindex="-1">
-          {% for sublink in link.sublinks %}
-          <li role="menuitem" itemprop="name">
-            <a href="{{ prepend: site.baseurl }}{{ sublink.url }}" {{ current }} itemprop="url" tabindex="-1">{{ sublink.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+        <a href="{{ link.url | prepend: site.baseurl }}" itemprop="url" {{ current }}>
+          <img class="svg" src="{{ site.baseurl }}/images/icons/{{ link.icon }}">
+          <span itemprop="name">{{ link.title }}</span>
+        </a>
       </li>
-      {% else %}
-      <li role="menuitem">
-        <a href="{{ link.url | prepend: site.baseurl }}" itemprop="url" {{ current }}><span itemprop="name">{{ link.title }}</span></a>
-      </li>
-      {% endif %}
       {% endfor %}
     </ul>
   </div>

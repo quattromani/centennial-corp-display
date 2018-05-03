@@ -16,7 +16,7 @@ jquery-integrity: sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=
 fontawesome-id: 4aa71f0649
 
 # Included Gems
-plugins: [jekyll-admin, jekyll-paginate, jekyll-email-protect]
+plugins: [jekyll-admin, jekyll-email-protect]
 
 # AMP versions of pages go in this directory
 ampdir: amps
@@ -50,8 +50,8 @@ exclude: ['node_modules']
 
 # Googles
 google-verify:
-google-analytics: true
-google-analytics-id: UA-97731239-29
+google-analytics: false
+google-analytics-id: UA-XXXXXXXX-XX
 google-maps-javascript-api-key:
 google-fonts: true
 
