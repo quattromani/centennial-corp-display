@@ -1,0 +1,120 @@
+---
+layout: home
+title: Home
+permalink: "/"
+class: home
+description: {{ site.description }}
+fadeThisSpeed: 200
+fadeThisDistance: 400
+---
+
+<section role="region">
+  <div class="banner">
+    <div class="fullscreen-bg mobile-hidden">
+      <video loop muted autoplay poster="{{ site.baseurl }}/images/home/HM_HeroCarousel_Img-1.jpg" class="fullscreen-bg__video">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.webm" type="video/webm">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.mp4" type="video/mp4">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="homepage-carousel mobile-shown">
+      {% for slide in site.data.home_slides %}
+      <div class="slide" style="background: url('{{ site.baseurl }}/images/home/{{ slide.slide }}');"></div>
+      {% endfor %}
+    </div>
+
+    <div class="sub-banner">
+      <h2>Shaping</h2>
+      <p>the evolution of American retail by creating superior shopping and entertainment destinations.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stats-grid" role="region">
+  <div class="container">
+    <div class="slide-in slide-in-left">
+      <ul>
+        {% for box in site.data.home_stats.row-1 %}
+        <li {% if box.color == null and box.img == null %} class="empty"{% endif %}
+            {% if box.color != null %} class="{{ box.color }}"{% endif %}
+            {% if box.mobile-shown == true %} class="mobile-shown"{% endif %}
+            {% if box.img != null %} style="background-image: url({{ site.baseurl }}/images/home/{{ box.img }})"{% endif %}>
+            {% if box.color != null %}
+              <div class="bars"></div>
+            {% endif %}
+            {% if box.h5 != null %}
+              <h5>{{ box.h5 }}
+                <span>{{ box.h5-span }}</span>
+              </h5>
+            {% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="slide-in slide-in-right">
+      <ul>
+        {% for box in site.data.home_stats.row-2 %}
+        <li {% if box.color == null and box.img == null %} class="empty"{% endif %}
+            {% if box.color != null %} class="{{ box.color }}"{% endif %}
+            {% if box.mobile-shown == true %} class="mobile-shown"{% endif %}
+            {% if box.img != null %} style="background-image: url({{ site.baseurl }}/images/home/{{ box.img }})"{% endif %}>
+            {% if box.color != null %}
+              <div class="bars"></div>
+            {% endif %}
+            {% if box.h5 != null %}
+              <h5>{{ box.h5 }}
+                <span>{{ box.h5-span }}</span>
+              </h5>
+            {% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="carousel" role="region">
+  <div class="homepage-property-carousel">
+    {% for slide in site.data.property_carousel %}
+    <div class="slide" style="background: url('{{ site.baseurl }}/images/home/{{ slide.slide }}');">
+      <div class="caption">
+        <div class="caption-holder">
+          <h3>{{ slide.caption-h3 }}</h3>
+          <span>{{ slide.caption-h3-span }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="where-we-are-headed" role="region">
+  <h2>Where We Are Headed</h2>
+  <ul>
+    {% for entry in site.data.home %}
+    <li>
+      <img src="{{ site.baseurl }}/images/home/{{ entry.icon }}" alt="" class="svg">
+      <h4>{{ entry.title }}</h4>
+      <p>{{ entry.content }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="events" role="region">
+  <div class="homepage-events-carousel">
+    {% for slide in site.data.home_events %}
+    <div class="slide" style="background: url('{{ site.baseurl }}/images/home/{{ slide.slide }}');">
+      <div class="container">
+        <div class="caption">
+          <h4>{{ slide.caption }}</h4>
+          <p>{{ slide.sub-caption }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="social" role="region">
+  <h2>The Latest</h2>
+  {% include curator.html %}
+</section>
