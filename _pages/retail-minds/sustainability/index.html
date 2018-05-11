@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SEE Sustainability
+nick: sustainability
 subtitle: Transforming Our Centers
 subsubtitle: Featured SEE Case Studies
 permalink: "/retail-minds/sustainability/"
@@ -8,6 +9,21 @@ class: sustainability
 parent: Retail Minds
 description:
 categories:
+
+# Sustainability
+sustainability: true
+sustainability-title: "Portfolio Achievements"
+sustainability-text: "At Centennial, we recognize our role in environmental stewardship, both as a property manager and a vibrant member of the communities we serve. Our efforts are adding up. In 2017, Centennial exceeded our 5% goal to reduce overall energy consumption among reporting properties (actual -6.6%), which equates to a total cost avoidance of $403,267. These five malls collectively diverted 1,229 tons of trash from landfills, which is 22% of our total waste. This is the equivalent of 17,212 VW /bugs of avoided landfill space! The cardboard recycled saved 20,900 mature trees."
+sustainability-image: CENT_2018-Creative-Toolkit_Earth-Day_A_FB-Banner_800x467.jpg
+sustainability-stats:
+  box-1-icon: KWSaved.svg
+  box-1-stat: '3.6M kWhs saved annually'
+  box-2-icon: treesSaved.svg
+  box-2-stat: '20,900 trees saved'
+  box-3-icon: recycling.svg
+  box-3-stat: '17.212 VW bugs of landfill space not used'
+  box-4-icon: Water.svg
+  box-4-stat: '1,229 tons of trash diverted'
 ---
 
 <section role="region">
@@ -112,5 +128,57 @@ categories:
     </div>
     {% endif %}
     {% endfor %}
+    <div>
+      <section role="region">
+        <aside class="push" role="complementary">
+          <figure>
+            <img src="{{ site.baseurl }}/images/{{ page.nick }}/{{ page.sustainability-image }}" alt="{{ page.title }} property shot">
+            <figcaption>
+              <img class="svg" src="{{ site.baseurl }}/images/{{ page.nick }}/SEECentennial.svg" alt="{{ page.title }} logo">
+            </figcaption>
+          </figure>
+        </aside>
+
+        <article class="pull" role="article">
+          <h4>{{ page.sustainability-title }}</h4>
+          <p>{{ page.sustainability-text }}</p>
+        </article>
+      </section>
+
+      <section role="region">
+        <div class="stats">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-1-icon }}" alt="{{ page.sustainability-stats.box-1-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-1-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-2-icon }}" alt="{{ page.sustainability-stats.box-2-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-2-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-3-icon }}" alt="{{ page.sustainability-stats.box-3-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-3-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-4-icon }}" alt="{{ page.sustainability-stats.box-4-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-4-stat }}</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
   </div>
 </section>
