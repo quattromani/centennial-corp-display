@@ -9,5 +9,33 @@ fadeThisSpeed: 200
 fadeThisDistance: 400
 ---
 
+<div class="container">
+  <div class="logo" itemscope itemtype="http://schema.org/Organization">
+    <a itemprop="url" href="{{ site.baseurl }}/">
+      <img itemprop="logo" src="{{ site.baseurl }}/images/{{ site.logo }}" alt="{{ site.title }} logo">
+    </a>
+  </div>
+</div>
+
+<section role="region">
+  <div class="banner">
+    <div class="fullscreen-bg mobile-hidden">
+      <video loop muted autoplay poster="{{ site.baseurl }}/images/home/HM_HeroCarousel_Img-1.jpg" class="fullscreen-bg__video">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.webm" type="video/webm">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.mp4" type="video/mp4">
+        <source src="video/1_CENT_0117_Website_Video_Final_1080p.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="homepage-carousel mobile-shown">
+      {% for slide in site.data.home_slides %}
+      <div class="slide" style="background: url('{{ site.baseurl }}/images/home/{{ slide.slide }}');"></div>
+      {% endfor %}
+    </div>
+
+    <div class="sub-banner">
+      <h2>Touch to <span>Explore</span></h2>
+    </div>
+  </div>
+</section>
 
 {% include nav.html %}
