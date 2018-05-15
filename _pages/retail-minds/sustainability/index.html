@@ -72,6 +72,58 @@ sustainability-stats:
   </header>
 
   <div class="sustainability-carousel">
+        <div>
+      <section role="region">
+        <aside class="push" role="complementary">
+          <figure>
+            <img src="{{ site.baseurl }}/images/{{ page.nick }}/{{ page.sustainability-image }}" alt="{{ page.title }} property shot">
+            <figcaption>
+              <img class="svg" src="{{ site.baseurl }}/images/{{ page.nick }}/SEECentennial-white.svg" alt="{{ page.title }} logo">
+            </figcaption>
+          </figure>
+        </aside>
+
+        <article class="pull" role="article">
+          <h4>{{ page.sustainability-title }}</h4>
+          <p>{{ page.sustainability-text }}</p>
+        </article>
+      </section>
+
+      <section role="region">
+        <div class="stats">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-1-icon }}" alt="{{ page.sustainability-stats.box-1-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-1-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-2-icon }}" alt="{{ page.sustainability-stats.box-2-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-2-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-3-icon }}" alt="{{ page.sustainability-stats.box-3-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-3-stat }}</span>
+                  </div>
+                </td>
+                <td>
+                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-4-icon }}" alt="{{ page.sustainability-stats.box-4-icon }} icon">
+                  <div class="text-container">
+                    <span>{{ page.sustainability-stats.box-4-stat }}</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
     {% for mall in site.malls %}
     {% if mall.sustainability == true %}
     <div>
@@ -128,57 +180,5 @@ sustainability-stats:
     </div>
     {% endif %}
     {% endfor %}
-    <div>
-      <section role="region">
-        <aside class="push" role="complementary">
-          <figure>
-            <img src="{{ site.baseurl }}/images/{{ page.nick }}/{{ page.sustainability-image }}" alt="{{ page.title }} property shot">
-            <figcaption>
-              <img class="svg" src="{{ site.baseurl }}/images/{{ page.nick }}/SEECentennial.svg" alt="{{ page.title }} logo">
-            </figcaption>
-          </figure>
-        </aside>
-
-        <article class="pull" role="article">
-          <h4>{{ page.sustainability-title }}</h4>
-          <p>{{ page.sustainability-text }}</p>
-        </article>
-      </section>
-
-      <section role="region">
-        <div class="stats">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-1-icon }}" alt="{{ page.sustainability-stats.box-1-icon }} icon">
-                  <div class="text-container">
-                    <span>{{ page.sustainability-stats.box-1-stat }}</span>
-                  </div>
-                </td>
-                <td>
-                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-2-icon }}" alt="{{ page.sustainability-stats.box-2-icon }} icon">
-                  <div class="text-container">
-                    <span>{{ page.sustainability-stats.box-2-stat }}</span>
-                  </div>
-                </td>
-                <td>
-                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-3-icon }}" alt="{{ page.sustainability-stats.box-3-icon }} icon">
-                  <div class="text-container">
-                    <span>{{ page.sustainability-stats.box-3-stat }}</span>
-                  </div>
-                </td>
-                <td>
-                  <img src="{{ site.baseurl }}/images/sustainability/{{ page.sustainability-stats.box-4-icon }}" alt="{{ page.sustainability-stats.box-4-icon }} icon">
-                  <div class="text-container">
-                    <span>{{ page.sustainability-stats.box-4-stat }}</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </div>
   </div>
 </section>
